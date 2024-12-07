@@ -1,0 +1,15 @@
+.page {
+  &__body {
+      margin: 0;
+      padding: 0;
+      background-color: #F2F6FA;
+  }
+
+  &__title {
+    color: #FFF;
+  }
+
+  &__edge {
+    background-color: $page-edge-background-color;
+  }
+}
