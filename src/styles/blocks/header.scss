@@ -1,4 +1,7 @@
 .header {
+  color: #FFF;
   height: 100vh;
   background-color: $page-edge-background-color;
+
+  @include padding-inline;
 }

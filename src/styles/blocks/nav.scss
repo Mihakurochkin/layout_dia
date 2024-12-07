@@ -1,4 +1,84 @@
 .nav {
-  height: 10px;
-  background-color: red;
+  @include page-grid;
+
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  height: 48px;
+  padding-top: 21px;
+  margin-bottom: 48px;
+  background-color: inherit;
+
+  @include on-tablet {
+    margin-bottom: 56px;
+  }
+
+  @include on-desktop {
+    height: 120px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list {
+    list-style: none;
+    display: none;
+
+    @include on-desktop {
+      display: flex;
+      grid-column: 3 / 11;
+      gap: 48px;
+    }
+    
+    @include on-bigger-desktop {
+      display: flex;
+      grid-column: 4 / 10;
+      gap: 48px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__icons {
+    display: flex;
+    justify-self: start;
+    gap: 35px;
+    align-items: center;
+
+    &--logo {
+      grid-column: span 1;
+      justify-self: start;
+    }
+
+    &--burger-menu {
+      @include on-desktop {
+        display: none;
+      }
+    }
+  }
+
+
+  &__hire-us {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19.5px;
+    letter-spacing: 3px;
+    width: fit-content;
+
+    grid-column: -1;
+
+    &::after {
+      content: '';
+      margin-top: 8px;
+      background-color: $main-blue-color;
+      border-radius: 4px;
+      width: 100%;
+      height: 2px;
+    }
+  }
 }

@@ -17,36 +17,82 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    >
   </head>
   <body class="page__body">
     <header class="header page__edge">
       <nav class="nav">
+        <div class="nav__icons">
+          <img
+          class="nav__icons--logo"
+          src="images/logo/dia-logo.svg"
+          alt="Dia logo">
 
+          <img
+            class="nav__icons--burger-menu"
+            src="images/Vector.svg"
+            alt="Menu">
+        </div>
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#about-us" class="nav__link">
+              About us
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#services" class="nav__link">
+              Services
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#testimonials" class="nav__link">
+              Testimonials
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#contact-us" class="nav__link">
+              Contact us
+            </a>
+          </li>
+        </ul>
+
+        <div class="nav__hire-us">
+          Hire us
+        </div>
       </nav>
 
       <h1 class="page__title header__title">Strategic Agency</h1>
     </header>
 
     <main class="main">
-      <section class="who-we-are">
-        <h2 class="who-we-are__title main__title">
+      <section id="about-us" class="about-us">
+        <h2 class="about-us__title main__title">
           Who we are
         </h2>
       </section>
 
-      <section class="expertise">
+      <section id="expertise" class="expertise">
         <h2 class="expertise__title main__title">Our expertise</h2>
       </section>
 
-      <section class="services">
+      <section id="services" class="services">
         <h2 class="services__title main__title">Air is a full service creative agency</h2>
       </section>
 
-      <section class="testimonials">
+      <section id="testimonials" class="testimonials">
         <h2 class="testimonials__title main__title">What people say</h2>
       </section>
 
-      <secion class="apply">
+      <secion id="apply" class="apply">
         <h2 class="apply__title main__title">Vision, Passion, Results</h2>
       </secion>
     </main>
@@ -59,7 +105,7 @@
         </form>
       </section>
 
-      <section class="footer__contact-us">
+      <section id="contact-us" class="footer__contact-us">
         <h2 class="footer__contact-us--title page__title">Contact us</h2>
       </section>
 
