@@ -1,4 +1,12 @@
 .main {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+
+  @include on-tablet {
+    gap: 148px;
+  }
+
   background-color: inherit;
   &__title {
     color: $main-title-color;

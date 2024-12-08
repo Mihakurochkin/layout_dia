@@ -1,8 +1,15 @@
 .about-us {
+  @include padding-inline;
+  
   background-color: inherit;
 
   &__title {
     text-align: center;
+    padding-bottom: 24px;
+
+    @include on-tablet {
+      padding-bottom: 16px;
+    }
   }
 
   &__text {

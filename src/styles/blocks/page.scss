@@ -2,6 +2,14 @@
   scroll-behavior: smooth;
 
   &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+
+    @include on-tablet {
+      gap: 148px;
+    }
+
     font-family: Poppins, Arial, sans-serif;
 
     margin: 0;
