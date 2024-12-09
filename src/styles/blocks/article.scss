@@ -1,0 +1,30 @@
+.article {
+  height: 264px;
+  background-color: #FFF;
+  box-shadow: 0 9px 18px 0 #25293108;
+  border-radius: 16px;
+  position: relative;
+
+  &__number {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19.5px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 24px;
+    width: 46px;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    background-color: rgba(
+      $main-theme-color-r,
+      $main-theme-color-g,
+      $main-theme-color-b,
+      0.1);
+    border-radius: 23px;
+  }
+}

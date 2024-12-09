@@ -1,3 +1,29 @@
 .services {
   background-color: inherit;
+
+  @include padding-inline;
+
+  &__subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19.5px;
+    letter-spacing: 3px;
+    text-align: left;
+    text-transform: uppercase;
+
+    color: #C0CDD7;
+  }
+
+  &__preview-text {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #6C788B;
+
+    @include on-desktop {
+      display: none;
+    }
+  }
 }
