@@ -1,9 +1,14 @@
 .about-us {
   @include padding-inline;
-  
+
   background-color: inherit;
+  max-width: 754px;
+  margin: 0 auto;
 
   &__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
     text-align: center;
     padding-bottom: 24px;
 

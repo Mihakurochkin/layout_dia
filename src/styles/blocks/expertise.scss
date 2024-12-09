@@ -1,27 +1,55 @@
 .expertise {
+  display: flex;
+  flex-direction: column;
   background-color: #FFF;
   border-radius: 30px;
+
+  &__wrapper {
+    @include padding-inline;
+    
+    @include on-desktop {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__article {
+    width: 214px;
+    margin: 0 auto;
+  }
 
   &__image {
     height: 166px;
     width: 184px;
     background-position: center;
     background-size: cover;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    border-radius: 20px;
 
     &-1 {
-      background-image: url();
+      background-image: url(../images/expertise-img1.png);
     }
 
     &-2 {
-      background-image: url();
+      background-image: url(../images/expertise-img2.png);
     }
 
     &-3 {
-      background-image: url();
+      background-image: url(../images/expertise-img3.png);
     }
   }
 
   &__title {
+    font-family: Poppins, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 78px;
+    text-align: center;
+    color: $main-title-color;
+  }
+
+  &__subtitle {
     font-family: Poppins, Arial, sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -37,5 +65,6 @@
     line-height: 21px;
     text-align: center;
     color: #6C788B;
+    margin-bottom: 56px;
   }
 }
